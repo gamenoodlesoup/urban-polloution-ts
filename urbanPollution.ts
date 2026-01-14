@@ -33,7 +33,7 @@ namespace urbanPollution {
   //% block="Move %d by %n"
   export function moveAgent(d: Direction, n: number): void {
     const direction = directions[d];
-    agent.move(direction[d], n);
+    agent.move(direction, n);
   }
 
   /**
@@ -42,6 +42,6 @@ namespace urbanPollution {
   //% block="Turn %t"
   export function turnAgent(t: TurnDirection): void {
     const turn = turns[t];
-    agent.turn(turn[t]);
+    agent.turn(turn);
   }
 }
