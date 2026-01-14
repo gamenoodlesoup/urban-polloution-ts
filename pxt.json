@@ -1,0 +1,17 @@
+{
+    "name": "minecraft-urbanPollution",
+    "version": "0.0.1",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "README.md",
+        "urbanPollution.ts"
+
+    ],
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
