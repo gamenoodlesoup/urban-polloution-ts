@@ -13,6 +13,13 @@ enum Direction {
   //% block="down"
   Down,
 }
+
+enum TurnDirection {
+  //% block="left"
+  LeftTurn,
+  //% block="right"
+  RightTurn,
+}
 // global variables
 const directions = [FORWARD, BACK, LEFT, RIGHT, UP, DOWN];
 
