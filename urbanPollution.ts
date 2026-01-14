@@ -18,7 +18,9 @@ const directions = [
     FORWARD,
     BACK,
     LEFT,
-    RIGHT
+    RIGHT,
+    UP,
+    DOWN
 ];
 
 const turns = [
@@ -35,12 +37,8 @@ namespace urbanPollution {
      */
     //% block="Move %d by %n"
     export function moveAgent(d: Direction, n: number): void {
-        for (let i = 0; i < n; i++){
-
             const direction = directions[d];
-
             agent.move(direction, 1);
-        }
     }
 
     /**
@@ -48,9 +46,7 @@ namespace urbanPollution {
      */
     //% block="Turn %t"
     export function turnAgent(t: TurnDirection): void {
-
         const turn = turns[t];
-
         agent.turn(turn);
     }  
 
