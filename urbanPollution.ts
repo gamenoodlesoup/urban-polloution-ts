@@ -20,9 +20,6 @@ const turns = [LEFT_TURN, RIGHT_TURN];
 
 //% block="Urban Pollution" weight=200 color=#FF0000 icon="\uf1b9"
 namespace urbanPollution {
-  loops.forever(function () {
-    player.execute("tp @e[type=armor_stand] @c");
-  });
   /**
    * Move Agent n spaces in the d direction
    */
