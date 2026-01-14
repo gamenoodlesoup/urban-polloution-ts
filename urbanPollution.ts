@@ -1,24 +1,24 @@
 // enums
 enum Direction {
   //% block="forward"
-  Forward,
+  FORWARD,
   //% block="back"
-  Back,
+  BACK,
   //% block="left"
-  Left,
+  LEFT,
   //% block="right"
-  Right,
+  RIGHT,
   //% block="up"
-  Up,
+  UP,
   //% block="down"
-  Down,
+  DOWN,
 }
 
 enum TurnDirection {
   //% block="left"
-  LeftTurn,
+  LEFT_TURN,
   //% block="right"
-  RightTurn,
+  RIGHT_TURN,
 }
 // global variables
 const directions = [FORWARD, BACK, LEFT, RIGHT, UP, DOWN];
@@ -33,7 +33,7 @@ namespace urbanPollution {
   //% block="Move %d by %n"
   export function moveAgent(d: Direction, n: number): void {
     const direction = directions[d];
-    agent.move(direction, 1);
+    agent.move(direction[d], n);
   }
 
   /**
@@ -42,6 +42,6 @@ namespace urbanPollution {
   //% block="Turn %t"
   export function turnAgent(t: TurnDirection): void {
     const turn = turns[t];
-    agent.turn(turn);
+    agent.turn(turn[t]);
   }
 }
